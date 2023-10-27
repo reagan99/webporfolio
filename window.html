@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <div ondblclick="showWindow()" oncontextmenu="showWindow()">
+        <img src="static/my_file.png">
+        <div class="file">
+            구래건
+        </div>
+    </div>
+
+
+    <div ondblclick="window.location.href = 'https://github.com/reagan99'">
+        <img src="static/git_logo.png" style="margin-top: 100px; width: 75px; height: 75px; left: 29px;">
+        <div class="git">
+            github
+        </div>
+    </div>
+
+    <div ondblclick="showFolder()">
+        <img src="static/my_file.png" style="margin-top: 228px;">
+        <div class="gicbak">
+            직박구리
+        </div>
+    </div>
+
+    <div class="powerpoint">
+        <div class="powerpoint-title-bar" onmousedown="dragPowerpoint(event)">
+            <div class="powerpoint-title-bar-text">PowerPoint</div>
+            <div class="powerpoint-title-bar-controls">
+                <button aria-label="Minimize" onclick="minimizePowerpoint(event)"></button>
+                <button aria-label="Maximize" onclick="maximizePowerpoint(event)"></button>
+                <button aria-label="Close" onclick="closePowerpoint(event)"></button>
+            </div>
+        </div>
+        <div class="powerpoint-body">
+            <div class="powerpoint-sidebar">
+                <ul>
+                    <li><a href="#">File</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Insert</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Transitions</a></li>
+                    <li><a href="#">Animations</a></li>
+                    <li><a href="#">Slide Show</a></li>
+                    <li><a href="#">Review</a></li>
+                    <li><a href="#">View</a></li>
+                </ul>
+            </div>
+            <div class="powerpoint-main">
+                <div class="powerpoint-slide">
+                    <img src="static/linux/슬라이드1.PNG" alt="Slide 1">
+                    <img src="static/linux/슬라이드2.PNG" alt="Slide 2">
+                    <img src="static/linux/슬라이드3.PNG" alt="Slide 3">
+                    <img src="static/linux/슬라이드4.PNG" alt="Slide 4">
+                    <img src="static/linux/슬라이드5.PNG" alt="Slide 5">
+                    <img src="static/linux/슬라이드6.PNG" alt="Slide 6">
+                    <img src="static/linux/슬라이드7.PNG" alt="Slide 7">
+                    <img src="static/linux/슬라이드8.PNG" alt="Slide 8">
+                    <img src="static/linux/슬라이드9.PNG" alt="Slide 9">
+                    <img src="static/linux/슬라이드10.PNG" alt="Slide 10">
+                    <img src="static/linux/슬라이드11.PNG" alt="Slide 11">
+                    <img src="static/linux/슬라이드12.PNG" alt="Slide 12">
+                    <img src="static/linux/슬라이드13.PNG" alt="Slide 13">
+                    <img src="static/linux/슬라이드14.PNG" alt="Slide 14">
+                    <img src="static/linux/슬라이드15.PNG" alt="Slide 15">
+                    <img src="static/linux/슬라이드16.PNG" alt="Slide 16">
+                    <img src="static/linux/슬라이드17.PNG" alt="Slide 17">
+                    <img src="static/linux/슬라이드18.PNG" alt="Slide 18">
+                    <img src="static/linux/슬라이드19.PNG" alt="Slide 19">
+                    <img src="static/linux/슬라이드20.PNG" alt="Slide 20">
+                    <img src="static/linux/슬라이드21.PNG" alt="Slide 21">
+                    <img src="static/linux/슬라이드22.PNG" alt="Slide 22">
+                </div>
+            </div>
+    
+
+    <div class="window" style="display:none">
+        <div class="title-bar" onmousedown="dragWindow(event)">
+            <div class="title-bar-text">Window</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize" onclick="minimizeWindow(event)"></button>
+                <button aria-label="Maximize" onclick="maximizeWindow(event)"></button>
+                <button aria-label="Close" onclick="closeWindow(event)"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <h1>Who am I</h1>
+            <img src="static/my_file.png" alt="내 이미지">
+            <button class="tag" ondblclick="showMemo()">개인정보</button>
+            <button class="tag" onclick="openEditor()">Word</button>
+            <button class="tag">메모</button>
+            <button class="tag" onclick="showLinux()">리눅스</button>
+        </div>
+    </div>
+    <div class="editor" style="display:none">
+        <div class="editor-title-bar" onmousedown="dragEditor(event)">
+            
+            <div class="editor-title-bar-text">Word</div>
+            <div class="toolbar">
+                <button class="btn">저장</button>
+                <button class="btn">열기</button>
+                <button class="btn">잘라내기</button>
+                <button class="btn">복사</button>
+                <button class="btn">붙여넣기</button>
+            </div>
+            <div class="editor-title-bar-controls">
+                <button aria-label="Minimize" onclick="minimizeEditor(event)"></button>
+                <button aria-label="Maximize" onclick="maximizeEditor(event)"></button>
+                <button aria-label="Close" onclick="closeEditor(event)"></button>
+            </div>
+        </div>
+        <div class="editor-body">
+            <p> 누군가를 알고 싶다면<br>
+                그 사람의 컴퓨터를 보면 되지 않을까요?<br>
+               아님 말고...<br>
+                </p>
+        </div>
+    </div>
+    
+    <div class="memo" style="display:none">
+        <div class="memo-title-bar" onmousedown="dragMemo(event)">
+            <div class="memo-title-bar-text">Memo</div>
+            <div class="memo-title-bar-controls">
+                <button aria-label="Minimize" onclick="minimizeMemo(event)"></button>
+                <button aria-label="Maximize" onclick="maximizeMemo(event)"></button>
+                <button aria-label="Close" onclick="closeMemo(event)"></button>
+            </div>
+        </div>
+        <div class="memo-body">
+            <h1>Sticker Memo</h1>
+            <p>이름: 구래건<br>
+                생년월일 : 2003.09.14<br>
+                태어난 곳: 캐나다/밴쿠버<br>
+                </p>
+        </div>
+    </div>
+    <div class="folder" style="display:none">
+        <div class="folder-title-bar" >
+            <div class="folder-title-bar-text">Folder</div>
+            <div class="folder-title-bar-controls">
+                <button aria-label="Minimize" onclick="minimizeFolder(event)"></button>
+                <button aria-label="Maximize" onclick="maximizeFolder(event)"></button>
+                <button aria-label="Close" onclick="closeFolder(event)"></button>
+            </div>
+        </div>
+        <div class="folder-separator"></div>
+        <div class="content">
+            <div class="sidebar">
+                <ul>
+                    <li>Documents</li>
+                    <li>Downloads</li>
+                    <li>Pictures</li>
+                    <li>Videos</li>
+                </ul>
+            </div>
+            <div class="main">
+                <ul>
+                    <li>File 1</li>
+                    <li>File 2</li>
+                    <li>File 3</li>
+                    <li>File 4</li>
+                    <li>File 5</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const windowElement = document.querySelector('.window');
+        const memoElement = document.querySelector('.memo');
+        const folderElement = document.querySelector('.folder');
+        const editorElement = document.querySelector('.editor');
+        const powerpointElement = document.querySelector('.powerpoint');
+        let isDraggingWindow = false;
+        let isDraggingMemo = false;
+        let isDraggingEditor = false;
+        let windowOffsetX = 0;
+        let windowOffsetY = 0;
+        let memoOffsetX = 0;
+        let memoOffsetY = 0;
+        let editorOffsetX = 0;
+        let editorOffsetY = 0;
+
+        function showWindow() {
+            windowElement.style.display = 'block';
+        }
+
+        function minimizeWindow(event) {
+            event.stopPropagation();
+            windowElement.style.display = 'none';
+        }
+
+        function openEditor() {
+            windowElement.style.display = 'none';
+            editorElement.style.display = 'block';
+        }
+        function showLinux(){
+            powerpointElement.style.display = 'block';
+        }
+
+        function closeEditor(event) {
+            event.stopPropagation();
+            editorElement.style.display = 'none';
+            windowElement.style.display = 'block';
+        }
+
+        function dragEditor(event) {
+            isDraggingEditor = true;
+            editorOffsetX = event.clientX - editorElement.offsetLeft;
+            editorOffsetY = event.clientY - editorElement.offsetTop;
+        }
+
+        function dragWindow(event) {
+            isDraggingWindow = true;
+            windowOffsetX = event.clientX - windowElement.offsetLeft;
+            windowOffsetY = event.clientY - windowElement.offsetTop;
+        }
+
+        function minimizeEditor(event) {
+            event.stopPropagation();
+            editorElement.style.display = 'none';
+        }
+
+        function maximizeEditor(event) {
+            event.stopPropagation();
+            editorElement.style.width = '100%';
+            editorElement.style.height = '100%';
+            editorElement.style.top = '30';
+            editorElement.style.left = '30';
+        }
+
+        function closeWindow(event) {
+            event.stopPropagation();
+            windowElement.style.display = 'none';
+        }
+
+        function dragMemo(event) {
+            isDraggingMemo = true;
+            memoOffsetX = event.clientX - memoElement.offsetLeft;
+            memoOffsetY = event.clientY - memoElement.offsetTop;
+        }
+
+        function minimizeMemo(event) {
+            event.stopPropagation();
+            memoElement.style.display = 'none';
+        }
+
+        function maximizeMemo(event) {
+            event.stopPropagation();
+            memoElement.style.width = '100%';
+            memoElement.style.height = '100%';
+            memoElement.style.top = '30';
+            memoElement.style.left = '30';
+        }
+
+        function closeMemo(event) {
+            event.stopPropagation();
+            memoElement.style.display = 'none';
+        }
+
+        function showMemo() {
+            memoElement.style.display = 'block';
+        }
+
+        function showFolder() {
+            folderElement.style.display = 'block';
+        }
+
+        function minimizeFolder(event) {
+            event.stopPropagation();
+            folderElement.style.display = 'none';
+        }
+
+        function maximizeFolder(event) {
+            event.stopPropagation();
+            folderElement.style.width = '100%';
+            folderElement.style.height = '100%';
+            folderElement.style.top = '30';
+            folderElement.style.left = '30';
+        }
+
+        function closeFolder(event) {
+            event.stopPropagation();
+            folderElement.style.display = 'none';
+        }
+        function minimizePowerpoint(event) {
+            event.stopPropagation();
+            powerpointElement.style.display = 'none';
+        }
+        function maximizePowerpoint(event) {
+            event.stopPropagation();
+            powerpointElement.style.width = '100%';
+            powerpointElement.style.height = '100%';
+            powerpointElement.style.top = '30';
+            powerpointElement.style.left = '30';
+        }
+        function closePowerpoint(event) {
+            event.stopPropagation();
+            powerpointElement.style.display = 'none';
+        }
+    
+    </script>
+</html>
+

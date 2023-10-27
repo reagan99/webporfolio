@@ -1,0 +1,559 @@
+body {
+    background-image: url('static/blue_flower.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* 다른 스타일 속성을 원하는대로 추가할 수 있습니다. */
+}
+
+.gicbak{
+    position: absolute;
+    top: 328px;
+    left: 67px;
+    transform: translateX(-50%);
+    color: white;
+    padding: 5px;
+    font-size: 11px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
+
+.file {
+    position: absolute;
+    top: 98px;
+    left: 67px;
+    transform: translateX(-50%);
+    color: white;
+    padding: 5px;
+    font-size: 11px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.git {
+    position: absolute;
+    top: 210px;
+    left: 66px;
+    transform: translateX(-50%);
+    color: white;
+    padding: 5px;
+    font-size: 11px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+h1 {
+    /* 헤더 스타일을 원하는대로 추가할 수 있습니다. */
+    color: white;
+    text-align: center;
+}
+footer {
+    background: linear-gradient(to left, #E2EEF9, #D5DCF2);
+    color: #fff;
+    text-align: center;
+    padding: 3px;
+    position: fixed;
+    bottom: 0;
+    left: 0; /* 왼쪽 끝부터 시작하도록 설정 */
+    width: 100%; /* 전체 폭을 가리키도록 설정 */
+}
+img {
+    position: absolute; 
+    left: 40px;
+    top: 50px;
+    width: 52px; /* 이미지의 폭을 조절 */
+    height: auto;
+    /* 다른 스타일 속성을 원하는대로 추가할 수 있습니다. */
+}
+
+.window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.title-bar {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    background-color: #0078d7;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.title-bar-text {
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+.title-bar-controls {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.title-bar-controls button {
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+.title-bar-controls button:nth-child(1) {
+    background-color: #ffc107;
+}
+
+.title-bar-controls button:nth-child(2) {
+    background-color: #28a745;
+}
+
+.title-bar-controls button:nth-child(3) {
+    background-color: #dc3545;
+}
+
+.window-body {
+    padding: 20px;
+}
+
+.tag {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #0078d7;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.memo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 400px;
+    background-color: #FFF7D1;
+    border: 1px solid black;
+    z-index: 1;
+}
+
+.memo-title-bar {
+    height: 30px;
+    background-color: #0078d7;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.memo-title-bar-controls button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+.memo-body h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 16px;
+}
+.memo-body p {
+    font-size: 24px;
+    color: black;
+}
+
+.memo-body {
+    padding: 10px;
+}
+
+
+.memo-title-bar-controls button:nth-child(1) {
+    background-color: #ffc107;
+}
+
+.memo-title-bar-controls button:nth-child(2) {
+    background-color: #28a745;
+}
+
+.memo-title-bar-controls button:nth-child(3) {
+    background-color: #dc3545;
+}
+
+
+
+
+
+.folder {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.folder-title-bar {
+    height: 30px;
+    background-color: #0078d7;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.folder-title-bar-controls button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+.folder-body h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 16px;
+}
+.folder-body p {
+    font-size: 24px;
+    color: black;
+}
+
+.folder-body {
+    padding: 10px;
+    border-right: 10px solid black;
+}
+.folder-separator {
+    width: 2px; /* 너비 조정 */
+    background-color: #000; /* 선의 색상 설정 */
+    height: max-content; /* 높이를 부모 요소와 동일하게 설정 */
+    position: absolute;
+    top: 7%;
+    left: 30%; /* 가운데 정렬 (선택한 위치에 따라 조정) */
+}
+.folder-title-bar-controls button:nth-child(1) {
+    background-color: #ffc107;
+}
+
+.folder-title-bar-controls button:nth-child(2) {
+    background-color: #28a745;
+}
+
+.folder-title-bar-controls button:nth-child(3) {
+    background-color: #dc3545;
+}
+
+
+
+
+body {
+    background-color: #ccc; /* 전체 배경 회색 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.editor {
+    border: 1px solid #ccc;
+    background-color: #fff; /* 흰색 배경 */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px; /* 원하는 최대 너비로 설정 */
+    width: 100%; /* 화면을 가득 채우도록 설정 */
+}
+
+.editor-title-bar {
+    background-color: #0078d4;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc; /* 타이틀 바와 본문 구분선 추가 */
+}
+
+
+
+.editor-title-bar-controls button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+
+.editor-title-bar-controls button:nth-child(1) {
+    background-color: #ffc107;
+}
+
+.editor-title-bar-controls button:nth-child(2) {
+    background-color: #28a745;
+}
+
+.editor-title-bar-controls button:nth-child(3) {
+    background-color: #dc3545;
+}
+
+.editor-body {
+    border: 1px solid #ccc;
+    padding: 10px;
+    flex-grow: 1; /* 내용 영역을 가운데로 확장 */
+    
+}
+.toolbar {
+    background-color: #0679b3; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.toolbar button {
+    background-color: #0679b3;
+    color: white;
+    border: 2px solid #0679b3;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toolbar button:hover {
+    background-color: #0679b3;
+    color: white;
+}
+
+.powerpoint-title-bar-controls button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+
+}
+
+
+.powerpoint {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    height: 600px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Powerpoint Title Bar */
+.powerpoint-title-bar {
+    position: relative;
+    height: 30px;
+    background-color: #0072C6;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+    cursor: move;
+}
+
+/* Powerpoint Title Bar Text */
+.powerpoint-title-bar-text {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Powerpoint Title Bar Controls */
+.powerpoint-title-bar-controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+/* Powerpoint Title Bar Control Buttons */
+.powerpoint-title-bar-controls button {
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 5px;
+    position: relative;
+}
+
+/* Powerpoint Title Bar Control Button Icons */
+.powerpoint-title-bar-controls button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Powerpoint Title Bar Control Button Minimize Icon */
+.powerpoint-title-bar-controls button[aria-label="Minimize"]:before {
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+}
+
+/* Powerpoint Title Bar Control Button Maximize Icon */
+.powerpoint-title-bar-controls button[aria-label="Maximize"]:before {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+/* Powerpoint Title Bar Control Button Close Icon */
+.powerpoint-title-bar-controls button[aria-label="Close"]:before {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+
+/* Powerpoint Sidebar */
+.powerpoint-sidebar {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    bottom: 0;
+    width: 150px;
+    background-color: #f2f2f2;
+    overflow-y: auto;
+}
+
+/* Powerpoint Sidebar Links */
+.powerpoint-sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.powerpoint-sidebar ul li {
+    margin: 0;
+    padding: 0;
+}
+
+.powerpoint-sidebar ul li a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.powerpoint-sidebar ul li a:hover {
+    background-color: #0072C6;
+    color: #fff;
+}
+
+/* Powerpoint Main */
+.powerpoint-main {
+    position: absolute;
+    top: 30px;
+    left: 150px;
+    bottom: 0;
+    right: 0;
+    background-color: #fff;
+    overflow-y: auto;
+}
+
+/* Powerpoint Slide */
+.powerpoint-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.powerpoint-slide:first-child {
+    display: block;
+}
+
+.powerpoint-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.powerpoint-title-bar-controls button:nth-child(1) {
+    background-color: #ffc107;
+}
+.powerpoint-title-bar-controls button:nth-child(2) {
+    background-color: #28a745;
+}
+.powerpoint-title-bar-controls button:nth-child(3) {
+    background-color: #dc3545;
+}
+
+.powerpoint-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.powerpoint-slide img {
+    display: block;
+    margin: 10px auto; /* 이미지를 수직 중앙으로 정렬합니다. */
+}
